@@ -44,7 +44,7 @@ while true do
             end 
             repeat task.wait() until not workspace.__THINGS.Coins:FindFirstChild(i)
         end 
-        task.wait()
+        task.wait(.1)
     end
-    task.wait()
+    task.wait(.1)
 end 
