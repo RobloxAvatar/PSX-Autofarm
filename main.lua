@@ -27,6 +27,12 @@ workspace.__THINGS.Orbs.ChildAdded:Connect(function(v)
     Orbs.Collect(v)
 end)
 
+while wait() do
+    for i,v in pairs(game:GetService("Workspace")["__THINGS"].Lootbags:GetChildren()) do
+        v.CFrame = CFrame.new(game.Players.LocalPlayer.Character.HumanoidRootPart.Position)
+    end
+end
+
 while true do 
     if _G.AutoFarm then
         local Pets = GetPets()
